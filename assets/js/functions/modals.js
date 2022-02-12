@@ -1,4 +1,5 @@
 import * as tag from "./tags.js";
+import * as gDom from "../variables/generalDom.js";
 
 export function vaciarModal(modal){
     modal.innerHTML = ""
@@ -64,22 +65,28 @@ export function modalExperience(obj){
                     <option value="Senior">Senior(6 &gt; Y)</option>
                 </select>
             </div>
-            </div>
-            <div class="form-row">
-                        <section>
-                            <div class='form-group'>
-                                <label for='inputAddress'>Stack</label>
-                                <section id='tagsFather'>
-                                </section>
-                                <div class='autocomplete'>
-                                    <input type='text' class='form-control' id='inputSkill' placeholder='Aquí podrás definir tu stack de hard skills con las habilidades que utilizas recuentemente.'>
-                                </div>
-                            </div>
-                        </section>
-        </div>
         <button id="mainFormSubmit" type="button" class="btn-sign-in">Sign in</button>
     </form>
 `)}
+
+export function modalAvatarVersions(obj){
+    return(`
+    <form id ="main-modal" class="modalForm">
+        <div class ="avatar-variant-container">
+            <div class="form-row avatar-variant-div">
+                <img class="avatar-variants" src="https://avatars.dicebear.com/api/avataaars/${obj.username}.svg?background=white" alt="">
+            </div>
+            <div class="form-row avatar-variant-div">
+                <img class="avatar-variants" src="https://avatars.dicebear.com/api/big-ears/${obj.username}.svg?background=white" alt="">
+            </div>
+            <div class="form-row avatar-variant-div">
+                <img class="avatar-variants" src="https://avatars.dicebear.com/api/miniavs/${obj.username}.svg?background=white" alt="">
+            </div>
+            <div class="form-row avatar-variant-div">
+                <img class="avatar-variants" src="https://avatars.dicebear.com/api/open-peeps/${obj.username}.svg?background=white" alt="">
+        </div>
+    </form>`)
+}
 
 export function rescribirvariables() {
     const inputsUserInfo= document.getElementsByClassName("form-control")
@@ -92,4 +99,14 @@ export function rescribirvariables() {
         gDom.generalModal.style.display = "none";
         vaciarModal(gDom.generalContentModal)
         window.location.reload()
+}
+
+
+export function changeAvatar(e){
+    let allUsers = JSON.parse(localStorage.getItem('userBook'));
+    allUsers[0].avatar = e.srcElement.src;
+    localStorage.setItem('userBook', JSON.stringify([allUsers[0]]))
+    gDom.generalModal.style.display = "none";
+    vaciarModal(gDom.generalContentModal)
+    window.location.reload()
 }

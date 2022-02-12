@@ -161,7 +161,70 @@
   margin: -20% 0 0 -17% !important;
 }
 
-/* The Close Button */
+#main-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  border: 3px solid #404560;
+  border-radius: 2%;
+  background-color: #1c1d2b;
+  height: 575px;
+  width: 700px;
+  position: absolute;
+  z-index: 15;
+  top: 50%;
+  left: 35%;
+  margin: -275px 0 0 -350px;
+  padding: 30px 30px 50px 30px;
+}
+#main-modal .avatar-variant-container {
+  height: 475px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: left;
+  flex-direction: row;
+}
+#main-modal .avatar-variant-container .avatar-variant-div {
+  height: auto;
+  width: auto;
+}
+#main-modal .avatar-variant-container .avatar-variant-div .avatar-variants {
+  height: 90%;
+  width: 90%;
+}
+#main-modal div .form-group {
+  margin: 10px;
+  width: 400px;
+}
+#main-modal div .form-group .description-input-main-form {
+  width: 100%;
+  display: block;
+}
+#main-modal div .form-group #tagsFather {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: left;
+  flex-direction: row;
+  border: 3px solid #404560;
+  min-height: 50px;
+  height: auto;
+}
+#main-modal div .form-group #tagsFather .tag {
+  border: 1px solid grey;
+  border-radius: 25px;
+  height: 25px;
+  margin: 3px;
+  padding: 0px 3px 0px 3px;
+  width: auto;
+}
+#main-modal div .form-group div .skill-input {
+  width: 200%;
+  margin-top: 10px;
+}
+
 #main-form-body {
   background-color: #04041a;
   height: 100vh;

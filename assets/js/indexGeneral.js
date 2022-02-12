@@ -7,6 +7,7 @@ import * as users from "../js/functions/users.js"
 
 
 
+
 if (gDom.generalUsernameInput) {
     const user = users.getUserInfo();
     let arr = [user[0].stacks]
@@ -43,6 +44,15 @@ gDom.btnEditExperience.onclick = function () {
     btnInfoUser.addEventListener("click",modal.rescribirvariables)
 }
 
+gDom.dicebearAvatarMini.onclick = function(){
+    let allUsers = JSON.parse(localStorage.getItem('userBook'));
+    gDom.generalContentModal.innerHTML= (modal.modalAvatarVersions(allUsers[0]))
+    gDom.generalModal.style.display = "block";
+    const avatarClicked= document.getElementsByClassName("avatar-variants")
+    for (const iterator of avatarClicked) {
+        iterator.addEventListener("click",modal.changeAvatar)
+    }
+}
 
 // When the user clicks on <span> (x), close the modal
 gDom.closeModal.onclick = function () {
