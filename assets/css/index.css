@@ -133,7 +133,7 @@
   /* Sit on top */
   padding-top: 100px;
   /* Location of the box */
-  left: 0;
+  left: -12%;
   top: 0;
   width: 100%;
   /* Full width */
@@ -155,21 +155,13 @@
   width: auto;
 }
 
+.modalForm {
+  height: 80% !important;
+  width: 60% !important;
+  margin: -20% 0 0 -17% !important;
+}
+
 /* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 #main-form-body {
   background-color: #04041a;
   height: 100vh;
@@ -229,12 +221,6 @@
 #main-form div .form-group div .skill-input {
   width: 200%;
   margin-top: 10px;
-}
-
-.modalForm {
-  height: 45% !important;
-  width: 40% !important;
-  margin: -20% 0 0 -17% !important;
 }
 
 .general-body {

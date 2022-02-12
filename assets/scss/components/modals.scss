@@ -4,7 +4,7 @@
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
-    left: 0;
+    left: -12%;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
@@ -21,17 +21,23 @@
     width: auto;
 }
 
-/* The Close Button */
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+.modalForm{
+    height: 80% !important;
+    width: 60% !important ;
+    margin: -20% 0 0 -17% !important;
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
+/* The Close Button */
+// .close {
+//     color: #aaaaaa;
+//     float: right;
+//     font-size: 28px;
+//     font-weight: bold;
+// }
+
+// .close:hover,
+// .close:focus {
+//     color: #000;
+//     text-decoration: none;
+//     cursor: pointer;
+// }
