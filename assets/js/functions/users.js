@@ -90,6 +90,9 @@ export async function fetchLogo(skill){
     let obj =data.filter(x=> x.name ==skill)
     return obj
 }
+
+
+
 export function createSkills({files,url,name}){
     return   `
     <figure>
