@@ -1,4 +1,6 @@
 
+export var idSkill=0;
+export var finalSkills = [];
 //variables autocompletar skill
 
 export function skills(){
