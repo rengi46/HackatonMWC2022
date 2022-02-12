@@ -5,7 +5,7 @@ Este proyecto es basa en un formulario  de dos paginas y una pagina para mostar 
 
 ## Para empezar
 
-necesitamos entar a la url : distracted-bhaskara-1fc729.netlify.app <br>
+necesitamos entar a la url : [Rengi Page Hackatone](https://distracted-bhaskara-1fc729.netlify.app)  <br>
 si no tambien podemos abrir con un servidor local (ej:live Server) mediante la pagina index.html 
 
 ## Organicacion carpetas
