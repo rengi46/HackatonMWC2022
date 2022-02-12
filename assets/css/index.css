@@ -222,6 +222,9 @@
   width: 200%;
   margin-top: 10px;
 }
+#main-form div .form-group small {
+  color: red;
+}
 
 .general-body {
   margin: 0;
